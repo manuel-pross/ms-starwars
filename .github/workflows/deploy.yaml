@@ -1,0 +1,14 @@
+name: Quality
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Unit Testing
+        run: npm run mocha
