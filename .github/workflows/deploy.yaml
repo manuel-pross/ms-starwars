@@ -10,5 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Build
+        run: npm ci
+
       - name: Run Unit Tests
         run: npm run unit-tests
