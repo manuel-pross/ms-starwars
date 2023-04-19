@@ -23,3 +23,9 @@ jobs:
 
       - name: Unit Testing
         run: npm run unit-tests
+
+      - name: Integration Testing
+        run: npm run integration-tests
+
+      - name: Formatting
+        run: npm run prettier
